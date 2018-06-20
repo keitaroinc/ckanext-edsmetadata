@@ -1,0 +1,415 @@
+# Danish (Denmark) translations for ckanext-edsmetadata.
+# Copyright (C) 2017 ORGANIZATION
+# This file is distributed under the same license as the ckanext-edsmetadata
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ckanext-edsmetadata 0.0.1\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2017-06-07 12:04+0200\n"
+"PO-Revision-Date: 2017-05-17 13:20+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: da_DK\n"
+"Language-Team: da_DK <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ckanext/edsmetadata/controller.py:98
+msgid "Unauthorized to edit this resource"
+msgstr "Brugeren har ikke rettigheder til at redigere denne ressource"
+
+#: ckanext/edsmetadata/controller.py:117
+msgid "Resource not found"
+msgstr "Ressource ikke fundet"
+
+#: ckanext/edsmetadata/controller.py:174
+msgid "Unauthorized to update dataset"
+msgstr "Brugeren har ikke rettigheder til at opdatere datasættet"
+
+#: ckanext/edsmetadata/controller.py:176 ckanext/edsmetadata/controller.py:221
+#: ckanext/edsmetadata/controller.py:250
+msgid "The dataset {id} could not be found."
+msgstr "Datasættet {id} kunne ikke findes"
+
+#: ckanext/edsmetadata/controller.py:180
+msgid "You must add at least one data resource"
+msgstr "Du skal tilføje mindst én data ressource"
+
+#: ckanext/edsmetadata/controller.py:188
+msgid "Error"
+msgstr "Fejl"
+
+#: ckanext/edsmetadata/controller.py:219
+msgid "Unauthorized to create a resource"
+msgstr "Brugeren har ikke rettigheder til at oprette en ressource"
+
+#: ckanext/edsmetadata/controller.py:255
+msgid "Unauthorized to create a resource for this package"
+msgstr ""
+"Brugeren har ikke rettigheder til at oprette en ressource for denne "
+"(package)"
+
+#: ckanext/edsmetadata/templates/ajax_snippets/resource_attribute.html:10
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:9
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:44
+msgid "Name of attribute"
+msgstr "Attribut navn"
+
+#: ckanext/edsmetadata/templates/ajax_snippets/resource_attribute.html:10
+#: ckanext/edsmetadata/templates/ajax_snippets/resource_attribute.html:12
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:9
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:11
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:44
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:46
+msgid "e.g. SysImbSurplus"
+msgstr "f.eks. sysImbSurPlus"
+
+#: ckanext/edsmetadata/templates/ajax_snippets/resource_attribute.html:12
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:11
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:46
+msgid "Name of field"
+msgstr "Feltets navn"
+
+#: ckanext/edsmetadata/templates/ajax_snippets/resource_attribute.html:14
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:13
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:48
+msgid "Description"
+msgstr "Beskrivelse"
+
+#: ckanext/edsmetadata/templates/ajax_snippets/resource_attribute.html:14
+#: ckanext/edsmetadata/templates/ajax_snippets/resource_attribute.html:16
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:13
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:15
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:48
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:50
+#: ckanext/edsmetadata/templates/package/snippets/resource_form.html:20
+msgid "Some useful notes about the data"
+msgstr "Beskrivelse af dataene"
+
+#: ckanext/edsmetadata/templates/ajax_snippets/resource_attribute.html:16
+#: ckanext/edsmetadata/templates/package/snippets/additional_info.html:15
+#: ckanext/edsmetadata/templates/package/snippets/package_basic_fields.html:22
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:15
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:50
+msgid "Comment"
+msgstr "Kommentar"
+
+#: ckanext/edsmetadata/templates/ajax_snippets/resource_attribute.html:18
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:17
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:52
+msgid "Example"
+msgstr "Eksempel"
+
+#: ckanext/edsmetadata/templates/ajax_snippets/resource_attribute.html:18
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:17
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:52
+msgid "eg. 386"
+msgstr "f.eks. 386"
+
+#: ckanext/edsmetadata/templates/ajax_snippets/resource_attribute.html:20
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:19
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:54
+msgid "Format as a regular expression"
+msgstr "Format som et regulært udtryk"
+
+#: ckanext/edsmetadata/templates/ajax_snippets/resource_attribute.html:20
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:19
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:54
+msgid "eg. /d{4}"
+msgstr "f.eks. /d{4}"
+
+#: ckanext/edsmetadata/templates/ajax_snippets/resource_attribute.html:22
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:21
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:56
+msgid "Size"
+msgstr "Størrelse"
+
+#: ckanext/edsmetadata/templates/ajax_snippets/resource_attribute.html:22
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:21
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:56
+msgid "eg. 4"
+msgstr "f.eks. 4"
+
+#: ckanext/edsmetadata/templates/ajax_snippets/resource_attribute.html:24
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:23
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:58
+msgid "Type"
+msgstr "Type"
+
+#: ckanext/edsmetadata/templates/ajax_snippets/resource_attribute.html:24
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:23
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:58
+msgid "eg. INTEGER"
+msgstr "f.eks. INTEGER"
+
+#: ckanext/edsmetadata/templates/ajax_snippets/resource_attribute.html:26
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:25
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:60
+msgid "Unit"
+msgstr "Enhed"
+
+#: ckanext/edsmetadata/templates/ajax_snippets/resource_attribute.html:26
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:25
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:60
+msgid "eg. kWh"
+msgstr "F.eks. kWh"
+
+#: ckanext/edsmetadata/templates/ajax_snippets/resource_attribute.html:28
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:27
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:62
+msgid "Validation rules"
+msgstr "Valideringsregler"
+
+#: ckanext/edsmetadata/templates/ajax_snippets/resource_attribute.html:28
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:27
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:62
+msgid "eg. >= 0, NOT NULL"
+msgstr "F.eks. >= 0, NOT NULL"
+
+#: ckanext/edsmetadata/templates/ajax_snippets/resource_attribute.html:30
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:29
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:64
+msgid "Property constraint"
+msgstr "Property constraint"
+
+#: ckanext/edsmetadata/templates/ajax_snippets/resource_attribute.html:32
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:31
+#: ckanext/edsmetadata/templates/package/snippets/resource_attributes.html:66
+msgid ""
+"Unit - conditional required field, e.g. measurements will always be "
+"required to have a Unit specified, whereas dates and texts doesn’t."
+msgstr ""
+"Enhed - betinget nødvendigt felt, idet f.eks. målinger skal have en "
+"enhed, hvor tekst og dato ikke skal."
+
+#: ckanext/edsmetadata/templates/package/resource_read.html:9
+msgid "Additional Information"
+msgstr "Yderligere information"
+
+#: ckanext/edsmetadata/templates/package/resource_read.html:16
+#: ckanext/edsmetadata/templates/package/snippets/additional_info.html:6
+msgid "Field"
+msgstr "Felt"
+
+#: ckanext/edsmetadata/templates/package/resource_read.html:17
+#: ckanext/edsmetadata/templates/package/snippets/additional_info.html:7
+msgid "Value"
+msgstr "Værdi"
+
+#: ckanext/edsmetadata/templates/package/resource_read.html:22
+msgid "Last updated"
+msgstr "Sidst opdateret"
+
+#: ckanext/edsmetadata/templates/package/resource_read.html:23
+msgid "unknown"
+msgstr "Ukendt"
+
+#: ckanext/edsmetadata/templates/package/snippets/additional_info.html:2
+msgid "Additional Info"
+msgstr "Yderligere info"
+
+#: ckanext/edsmetadata/templates/package/snippets/additional_info.html:22
+msgid "Update frequency"
+msgstr "Opdateringsfrekvens"
+
+#: ckanext/edsmetadata/templates/package/snippets/additional_info.html:29
+#: ckanext/edsmetadata/templates/package/snippets/package_basic_fields.html:56
+msgid "Resolution"
+msgstr "Opløsning"
+
+#: ckanext/edsmetadata/templates/package/snippets/additional_info.html:36
+#: ckanext/edsmetadata/templates/package/snippets/package_basic_fields.html:62
+msgid "Metadata language"
+msgstr "Metadata sprog"
+
+#: ckanext/edsmetadata/templates/package/snippets/additional_info.html:43
+msgid "Source"
+msgstr "Kilde"
+
+#: ckanext/edsmetadata/templates/package/snippets/additional_info.html:54
+#: ckanext/edsmetadata/templates/package/snippets/additional_info.html:59
+#: ckanext/edsmetadata/templates/package/snippets/package_metadata_fields.html:4
+msgid "Author"
+msgstr "Forfatter"
+
+#: ckanext/edsmetadata/templates/package/snippets/additional_info.html:66
+#: ckanext/edsmetadata/templates/package/snippets/additional_info.html:71
+msgid "Maintainer"
+msgstr "Vedligeholdes af"
+
+#: ckanext/edsmetadata/templates/package/snippets/additional_info.html:78
+msgid "Version"
+msgstr "Version"
+
+#: ckanext/edsmetadata/templates/package/snippets/additional_info.html:85
+#: ckanext/edsmetadata/templates/package/snippets/package_basic_fields.html:135
+msgid "State"
+msgstr "Tilstand"
+
+#: ckanext/edsmetadata/templates/package/snippets/additional_info.html:92
+msgid "Dataset created on"
+msgstr "Dato for oprettelse"
+
+#: ckanext/edsmetadata/templates/package/snippets/additional_info.html:100
+msgid "Links to"
+msgstr "Linker til"
+
+#: ckanext/edsmetadata/templates/package/snippets/info_table.html:2
+#: ckanext/edsmetadata/templates/package/snippets/resource_form.html:32
+msgid "Resource Attributes"
+msgstr "Ressource attributter"
+
+#: ckanext/edsmetadata/templates/package/snippets/package_basic_fields.html:4
+msgid "Title of dataset"
+msgstr "Datasæt titel"
+
+#: ckanext/edsmetadata/templates/package/snippets/package_basic_fields.html:4
+msgid "<text>, supposed to be unique on EDS"
+msgstr "<text>, skal være unik på EDS"
+
+#: ckanext/edsmetadata/templates/package/snippets/package_basic_fields.html:13
+#: ckanext/edsmetadata/templates/package/snippets/resource_form.html:12
+msgid "URL"
+msgstr "URL"
+
+#: ckanext/edsmetadata/templates/package/snippets/package_basic_fields.html:13
+msgid "eg. my-dataset"
+msgstr "f.eks. mit-datasæt"
+
+#: ckanext/edsmetadata/templates/package/snippets/package_basic_fields.html:19
+#: ckanext/edsmetadata/templates/package/snippets/resource_form.html:20
+msgid "Description (notes)"
+msgstr "Bekskrivelse (notater) "
+
+#: ckanext/edsmetadata/templates/package/snippets/package_basic_fields.html:19
+msgid "<text>, short description"
+msgstr "<text>, kort beskrivelse"
+
+#: ckanext/edsmetadata/templates/package/snippets/package_basic_fields.html:22
+msgid ""
+"<text>, Any pertinent comment that is not part of the Description, e.g. "
+"“settlement method ‘Flex’ wasn’t an option in the Danish market before "
+"2017-07-01”"
+msgstr ""
+"<text>, kommentarer der ikke hører til i beskrivelsen, f.eks. omkring "
+"sammenhæng i data"
+
+#: ckanext/edsmetadata/templates/package/snippets/package_basic_fields.html:27
+msgid " License"
+msgstr "Licens"
+
+#: ckanext/edsmetadata/templates/package/snippets/package_basic_fields.html:42
+msgid "License definitions and additional information can be found at"
+msgstr "Licens defintioner og yderligere information kan findes her"
+
+#: ckanext/edsmetadata/templates/package/snippets/package_basic_fields.html:43
+msgid "opendefinition.org"
+msgstr "opendifinition.org"
+
+#: ckanext/edsmetadata/templates/package/snippets/package_basic_fields.html:56
+msgid ""
+"Duration of one measurement. One hour = PT1H, Daily = P1D or PT24H, in "
+"general PnYnMnDTnHnMnS. ISO8601"
+msgstr ""
+"Varighed af en måling. én time = PT1H, Dag = P1D or PT24H, generelt "
+"PnYnMnDTnHnMnS. ISO8601"
+
+#: ckanext/edsmetadata/templates/package/snippets/package_basic_fields.html:57
+msgid "Update Frequency"
+msgstr "Opdateringsfrekvens"
+
+#: ckanext/edsmetadata/templates/package/snippets/package_basic_fields.html:57
+msgid ""
+"Same format as Resolution. How often is new data uploaded. If new data is"
+" uploaded as soon as they are measured (real-time) this value is the same"
+" as resolution"
+msgstr ""
+"Samme format som opløsning. Hvor tit bliver nye data uploaded? Hvis nye "
+"data uploades så snart de måles (realtid), så er denne værdi den samme "
+"som opløsning"
+
+#: ckanext/edsmetadata/templates/package/snippets/package_basic_fields.html:69
+msgid "Tags"
+msgstr "Tags"
+
+#: ckanext/edsmetadata/templates/package/snippets/package_basic_fields.html:69
+msgid "eg. economy, mental health, government"
+msgstr "Information om opløsning på engelsk, f.eks. hour, muncipality"
+
+#: ckanext/edsmetadata/templates/package/snippets/package_basic_fields.html:92
+msgid "Organization"
+msgstr "Organisation"
+
+#: ckanext/edsmetadata/templates/package/snippets/package_basic_fields.html:96
+msgid "No organization"
+msgstr "Ingen organisation"
+
+#: ckanext/edsmetadata/templates/package/snippets/package_basic_fields.html:114
+msgid "Visibility"
+msgstr "Synlighed"
+
+#: ckanext/edsmetadata/templates/package/snippets/package_basic_fields.html:117
+msgid "Private"
+msgstr "Privat"
+
+#: ckanext/edsmetadata/templates/package/snippets/package_basic_fields.html:117
+msgid "Public"
+msgstr "Offentlig"
+
+#: ckanext/edsmetadata/templates/package/snippets/package_basic_fields.html:138
+msgid "Active"
+msgstr "Aktiv"
+
+#: ckanext/edsmetadata/templates/package/snippets/package_basic_fields.html:139
+msgid "Deleted"
+msgstr "Slettet"
+
+#: ckanext/edsmetadata/templates/package/snippets/package_metadata_fields.html:4
+msgid "Joe Bloggs"
+msgstr "Joe Bloggs"
+
+#: ckanext/edsmetadata/templates/package/snippets/package_metadata_fields.html:6
+msgid "Author Email"
+msgstr "Forfatter E-mail"
+
+#: ckanext/edsmetadata/templates/package/snippets/package_metadata_fields.html:6
+msgid "joe@example.com"
+msgstr "Joe@example.dk"
+
+#: ckanext/edsmetadata/templates/package/snippets/resource_form.html:12
+msgid "Data"
+msgstr "Data"
+
+#: ckanext/edsmetadata/templates/package/snippets/resource_form.html:12
+msgid "http://example.com/external-data.csv"
+msgstr "http://example.com/external-data.csv"
+
+#: ckanext/edsmetadata/templates/package/snippets/resource_form.html:16
+msgid "Name of resource"
+msgstr "Navn på ressource"
+
+#: ckanext/edsmetadata/templates/package/snippets/resource_form.html:16
+msgid "eg. January 2011 Gold Prices"
+msgstr "f.eks. samme navn som datasæt"
+
+#: ckanext/edsmetadata/templates/package/snippets/resource_form.html:25
+msgid "Format"
+msgstr "Format"
+
+#: ckanext/edsmetadata/templates/package/snippets/resource_form.html:25
+msgid "eg. CSV, XML or JSON"
+msgstr "f.eks. CSV, XMl elelr JSON"
+
+#: ckanext/edsmetadata/templates/package/snippets/resource_form.html:26
+msgid "This will be guessed automatically. Leave blank if you wish"
+msgstr "Automatisk, kan efterlades blank"
+
+#: ckanext/edsmetadata/templates/package/snippets/resource_form.html:35
+msgid "New Attribute"
+msgstr "Ny attribut"
+

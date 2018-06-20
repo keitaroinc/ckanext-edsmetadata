@@ -1,0 +1,15 @@
+{% ckan_extends %}
+
+  {% block package_metadata_author %}
+    {{ form.input('author', label=_('Author'), id='field-author', placeholder=_('Joe Bloggs'), value=data.author, error=errors.author, classes=['control-medium'], is_required=true) }}
+
+    {{ form.input('author_email', label=_('Author Email'), id='field-author-email', type='email', placeholder=_('joe@example.com'), value=data.author_email, error=errors.author_email, classes=['control-medium'], is_required=true) }}
+  {% endblock %}
+
+{% block package_metadata_fields_custom %}
+
+  {% block custom_fields %}
+    {{ super() }}
+  {% endblock %}
+
+{% endblock %}

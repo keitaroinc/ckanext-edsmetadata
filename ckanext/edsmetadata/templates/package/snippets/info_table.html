@@ -1,0 +1,67 @@
+
+{% set title = title or _('Resource Attributes') %}
+{% set headings = headings or [] %}
+{% set items = items or {} %}
+  <section class="module">
+    <div class="module-content">
+      <h2>{{ title }}</h2>
+      <table class="table table-striped table-bordered table-condensed">
+                    <colgroup>
+                <col class="col-md-4">
+            </colgroup>
+        <thead>
+          <tr>
+            {% for heading in headings %}
+                <th scope="col">{{ heading }}</th>
+            {% endfor %}
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">{{_('Name')}}</th>
+            <td>{{items['name_of_attribute']}}</td>
+        </tr>
+        <tr>
+            <th scope="row">{{_('Description')}}</th>
+            <td>{{h.render_markdown(items['attribute_description'])}}</td>
+        </tr>
+        <tr>
+            <th scope="row">{{_('Comment')}}</th>
+            <td>{{h.render_markdown(items['comment'])}}</td>
+        </tr>
+        <tr>
+            <th scope="row">{{_('Example')}}</th>
+            <td>{{items['example']}}</td>
+        </tr>
+        <tr>
+            <th scope="row">{{_('Unit')}}</th>
+            <td>{{items['unit']}}</td>
+        </tr>
+        <tr>
+            <th scope="row">{{_('Field')}}</th>
+            <td>{{items['name_of_field']}}</td>
+        </tr>
+        <tr>
+            <th scope="row">{{_('Property Contstraint')}}</th>
+            <td>{{items['property_constraint']}}</td>
+        </tr>
+        <tr>
+            <th scope="row">{{_('Type')}}</th>
+            <td>{{items['type']}}</td>
+        </tr>
+        <tr>
+            <th scope="row">{{_('Size')}}</th>
+            <td>{{items['size']}}</td>
+        </tr>
+        <tr>
+            <th scope="row">{{_('Format Regex')}}</th>
+            <td>{{items['format_regex']}}</td>
+        </tr>
+        <tr>
+            <th scope="row">{{_('Validation Rules')}}</th>
+            <td>{{items['validation_rules']}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>

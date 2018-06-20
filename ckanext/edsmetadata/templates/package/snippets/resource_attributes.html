@@ -1,0 +1,69 @@
+{% set attributes = data.attributes %}
+{% if attributes %}
+{% for attribute in attributes %}
+{% set n = loop.index %}
+
+<div class="panel panel-default resource-attribute" id="resource_attribute{{n}}">
+    <div class="panel-heading"><strong>{{ attribute.name_of_attribute or _( 'Attribute ' + n|string )}}</strong></div>
+    <div class="panel-body">
+        {{ form.input('name_of_attribute_' + n|string, id='name_of_attribute_' + n|string, label=_('Name'), placeholder=_('e.g. SysImbSurplus'), value=attribute.name_of_attribute, error=errors['name_of_attribute_' + n|string], classes=['control-full'], attrs={'required':'required'}, is_required=true) }}
+
+        {{ form.markdown('attribute_description_' + n|string, id='attribute_description_' + n|string, label=_('Description'), placeholder=_('Some useful notes about the data'), attrs={'class':'form-control','required':'required'}, value=attribute.attribute_description, error=errors['attribute_description_' + n|string], is_required=true) }}
+
+        {{ form.markdown('comment_' + n|string, id='comment_' + n|string, label=_('Comment'), placeholder=_('Some useful notes about the data'), attrs={'class':'form-control','required':'required'}, value=attribute.comment, error=errors['comment_' + n|string]) }}
+
+        {{ form.input('example_' + n|string, id='example_' + n|string, label=_('Example'), placeholder=_('eg. 386'), value=attribute.example, error=errors['example_' + n|string], classes=['control-full'], attrs={'required':'required'}, is_required=true) }}
+
+        {{ form.input('unit_' + n|string, id='unit_' + n|string, label=_('Unit'), placeholder=_('eg. kWh'), value=attribute.unit, error=errors['unit_' + n|string], classes=['control-full'], attrs={'required':'required'}, is_required=true) }}
+
+        {{ form.input('name_of_field_' + n|string, id='name_of_field_' + n|string, label=_('Field'), placeholder=_('e.g. SysImbSurplus'), value=attribute.name_of_field, error=errors['name_of_field_' + n|string], classes=['control-full'], attrs={'required':'required', 'readonly':'readonly'}, is_required=true) }}
+
+        {{ form.input('property_constraint_' + n|string, id='property_constraint_' + n|string, label=_('Property constraint'), value=attribute.property_constraint, error=errors['property_constraint_' + n|string], classes=['control-full']) }}
+
+        {{ form.input('type_' + n|string, id='type_' + n|string, label=_('Type'), placeholder=_('eg. INTEGER'), value=attribute.type, error=errors['type_' + n|string], classes=['control-full'], attrs={'required':'required'}, is_required=true) }}
+
+        {{ form.input('size_' + n|string, id='size_' + n|string, label=_('Size'), placeholder=_('eg. 4'), value=attribute.size, error=errors['size_' + n|string], attrs={'required':'required'}, classes=['control-full'], is_required=true, type='number') }}
+
+        {{ form.input('format_regex_' + n|string, id='format_regex_' + n|string, label=_('Format Regex'), placeholder=_('eg. /d{4}'), value=attribute.format_regex, error=errors['format_regex_' + n|string], attrs={'required':'required'}, classes=['control-full']) }}
+
+        {{ form.input('validation_rules_' + n|string, id='validation_rules_' + n|string, label=_('Validation rules'), placeholder=_('eg. >= 0, NOT NULL'), value=attribute.validation_rules, error=errors['validation_rules_' + n|string], classes=['control-full']) }}
+    </div>
+</div>
+
+{% endfor %}
+
+{% else %}
+{% set n = 1 %}
+{% set attribute = {} %}
+{% set errors = {} %}
+
+<div class="panel panel-default resource-attribute">
+    <div class="panel-heading"><strong>{{ _( 'Attribute ' + n|string ) }}</strong></div>
+    <div class="panel-body">
+        {{ form.input('name_of_attribute_' + n|string, id='name_of_attribute_' + n|string, label=_('Name'), placeholder=_('e.g. SysImbSurplus'), value=attribute.name_of_attribute, error=errors['name_of_attribute_' + n|string], classes=['control-full'], attrs={'required':'required'}, is_required=true) }}
+
+        {{ form.markdown('attribute_description_' + n|string, id='attribute_description_' + n|string, label=_('Description'), placeholder=_('Some useful notes about the data'), attrs={'class':'form-control','required':'required'}, value=attribute.attribute_description, error=errors['attribute_description_' + n|string], is_required=true) }}
+
+        {{ form.markdown('comment_' + n|string, id='comment_' + n|string, label=_('Comment'), placeholder=_('Some useful notes about the data'), attrs={'class':'form-control','required':'required'}, value=attribute.comment, error=errors['comment_' + n|string]) }}
+
+        {{ form.input('example_' + n|string, id='example_' + n|string, label=_('Example'), placeholder=_('eg. 386'), value=attribute.example, error=errors['example_' + n|string], classes=['control-full'], attrs={'required':'required'}, is_required=true) }}
+
+        {{ form.input('unit_' + n|string, id='unit_' + n|string, label=_('Unit'), placeholder=_('eg. kWh'), value=attribute.unit, error=errors['unit_' + n|string], classes=['control-full'], attrs={'required':'required'}, is_required=true) }}
+
+        {{ form.input('name_of_field_' + n|string, id='name_of_field_' + n|string, label=_('Field'), placeholder=_('e.g. SysImbSurplus'), value=attribute.name_of_field, error=errors['name_of_field_' + n|string], classes=['control-full'], attrs={'required':'required'}, is_required=true) }}
+
+        {{ form.input('property_constraint_' + n|string, id='property_constraint_' + n|string, label=_('Property constraint'), value=attribute.property_constraint, error=errors['property_constraint_' + n|string], classes=['control-full']) }}
+
+        {{ form.input('type_' + n|string, id='type_' + n|string, label=_('Type'), placeholder=_('eg. INTEGER'), value=attribute.type, error=errors['type_' + n|string], classes=['control-full'], attrs={'required':'required'}, is_required=true) }}
+
+        {{ form.input('size_' + n|string, id='size_' + n|string, label=_('Size'), placeholder=_('eg. 4'), value=attribute.size, error=errors['size_' + n|string], attrs={'required':'required'}, classes=['control-full'], is_required=true, type='number') }}
+
+        {{ form.input('format_regex_' + n|string, id='format_regex_' + n|string, label=_('Format Regex'), placeholder=_('eg. /d{4}'), value=attribute.format_regex, error=errors['format_regex_' + n|string], attrs={'required':'required'}, classes=['control-full']) }}
+
+        {{ form.input('validation_rules_' + n|string, id='validation_rules_' + n|string, label=_('Validation rules'), placeholder=_('eg. >= 0, NOT NULL'), value=attribute.validation_rules, error=errors['validation_rules_' + n|string], classes=['control-full']) }}
+    </div>
+    <div class="panel-footer"><span class="control-required">*</span> {{_('Unit - conditional required field, e.g. measurements will always be required to have a Unit specified, whereas dates and texts doesn’t.')}}</div>
+</div>
+
+{% endif %}
+

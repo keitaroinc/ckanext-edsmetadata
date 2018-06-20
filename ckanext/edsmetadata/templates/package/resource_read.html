@@ -1,0 +1,48 @@
+{% ckan_extends %}
+
+{% block primary_content %}
+  {% block resource_additional_information %}
+    {% if res %}
+      <section class="module">
+        {% block resource_additional_information_inner %}
+        <div class="module-content">
+          <h2>{{ _('Additional Information') }}</h2>
+          <table class="table table-striped table-bordered table-condensed" data-module="table-toggle-more">
+            <colgroup>
+                <col class="col-md-4">
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope="col">{{ _('Field') }}</th>
+                <th scope="col">{{ _('Value') }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">{{ _('Last updated') }}</th>
+                <td>{{ h.render_datetime(res.last_modified, with_hours=true) or h.render_datetime(res.revision_timestamp, with_hours=true) or _('unknown') }}</td>
+              </tr>
+
+              {% for key, value in h.format_resource_items(res.items()) %}
+              {% if key not in h.resource_excluded_fields() %}
+                <tr class="toggle-more"><th scope="row">{{ key }}</th><td>{{ value }}</td></tr>
+              {% endif %}
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+        {% endblock %}
+      </section>
+    {% endif %}
+  {% endblock %}
+
+    {% block resource_attributes %}
+        {% for attribute in res.attributes %}
+            <div class="resource-attributes">
+                {% set title = attribute['name_of_attribute'] or _('Attribute ' + loop.index|string) %}
+                {% snippet 'package/snippets/info_table.html', title=title, items=attribute %}
+            </div>
+        {% endfor %}
+    {% endblock %}
+
+{% endblock %}
