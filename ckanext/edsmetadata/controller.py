@@ -13,6 +13,7 @@ import ckan.lib.base as base
 import ckan.lib.helpers as h
 import ckan.model as model
 import ckan.lib.render
+import ckan.plugins.toolkit as t
 
 try:
     # CKAN 2.7 and later
@@ -27,7 +28,7 @@ log = logging.getLogger(__name__)
 
 render = base.render
 abort = base.abort
-redirect = base.redirect
+redirect = t.redirect_to
 
 NotFound = l.NotFound
 NotAuthorized = l.NotAuthorized
